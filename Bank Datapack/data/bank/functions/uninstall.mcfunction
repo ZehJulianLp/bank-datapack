@@ -1,0 +1,14 @@
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove bank
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove banksetup
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove bank-page-id
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove players-online
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove leave
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove headsetter
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove counter
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove bank-data
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove bank-pending
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove bank-ram
+execute unless entity @e[tag=bankomat] run scoreboard objectives remove bank-deposit
+execute unless entity @e[tag=bankomat] run setblock 0 -64 0 air
+execute if entity @e[tag=bankomat] run tellraw @s ["",{"text":"Es sind noch nicht alle Bankautomaten entfernt. Bitte entferne alle Automaten in der Welt mit dem Tool.","color": "dark_red"}]
+execute unless entity @e[tag=bankomat] run tellraw @s [{"text":"Bank-Datapack erfolgreich deinstalliert. Du kannst es nun aus deinem Weltenordner löschen. Gebe /reload ein, um es wieder zu aktivieren.","color":"green"}]

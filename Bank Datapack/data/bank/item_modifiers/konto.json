@@ -1,0 +1,30 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": [
+        {
+          "text": "Kontostand: ",
+          "color": "gold",
+          "bold": true,
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "bank"
+          },
+          "color": "green",
+          "bold": true,
+          "italic": false
+        },
+        {
+          "text": " Emerald(s)",
+          "color": "gold",
+          "bold": false,
+          "italic": false
+        }
+      ]
+    }
+  ]
+  
